@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const PROJECTS_DATA = [
   {
     id: 'farm-memory',
-    index: '01 / 06',
+    index: '01 / 10',
     title: 'Farm Memory',
     subtitle: 'AI Voice Assistant for Indian Farmers',
     event: 'VoiceforBharat Challenge',
@@ -42,13 +42,13 @@ const PROJECTS_DATA = [
   },
   {
     id: 'smartbundle-ai',
-    index: '02 / 06',
+    index: '02 / 10',
     title: 'SmartBundle AI',
     subtitle: 'Intelligent Retail & Cross-Selling Engine',
     event: 'Demux 3.0 Hackathon',
     category: 'full-stack',
     categoryLabel: 'Full-Stack / E-Commerce AI',
-    summary: 'Created a dynamic e-commerce storefront delivering real-time bundle recommendations conditioned on live shopping cart state with automated state management and sub-50ms inference feedback.',
+    summary: 'Built a dynamic cart-based product bundling storefront with CSV-backed stock, pricing and margin data; admin analytics remain in development.',
     tech: ['Next.js', 'React', 'TypeScript', 'Python', 'REST API', 'Tailwind CSS'],
     highlights: [
       'Developed a fluid, responsive Next.js and TypeScript frontend with optimistic UI updates and live cart state synchronization.',
@@ -61,7 +61,7 @@ const PROJECTS_DATA = [
   },
   {
     id: 'bugtrace',
-    index: '03 / 06',
+    index: '03 / 10',
     title: 'BugTrace',
     subtitle: 'Android Device Telemetry & Automated Bug Detection',
     event: 'iQOO Hackathon',
@@ -80,7 +80,7 @@ const PROJECTS_DATA = [
   },
   {
     id: 'industrial-intelligence',
-    index: '04 / 06',
+    index: '04 / 10',
     title: 'Industrial Intelligence',
     subtitle: 'AI-Powered Document Q&A System',
     event: 'ET AI Hackathon 2.0',
@@ -98,27 +98,8 @@ const PROJECTS_DATA = [
     githubUrl: 'https://github.com/sruthi-r-22/Industrial-Intelligence'
   },
   {
-    id: 'pyrosentinel-gis',
-    index: '05 / 06',
-    title: 'PyroSentinel GIS',
-    subtitle: 'Geospatial Fire Monitoring Prototype',
-    event: 'Smart India Hackathon (SIH 2026)',
-    category: 'systems',
-    categoryLabel: 'Geospatial & Analytics',
-    summary: 'Built a Detect → Contextualize → Classify → Visualize pipeline to ingest satellite thermal hotspot data and accurately distinguish industrial heat anomalies from critical forest fire events.',
-    tech: ['GIS Spatial Analysis', 'Satellite Thermal Hotspot Data', 'Python', 'GeoJSON', 'Data Pipelines'],
-    highlights: [
-      'Structured an automated satellite data ingestion pipeline filtering thermal radiant energy (FRP) and confidence scores.',
-      'Formulated spatial buffer algorithms cross-referencing recognized industrial zones, power plants, and refineries to prevent false positives.',
-      'Implemented automated hazard classification to prioritize rapid-response alerts for remote non-industrial forestry zones.',
-      'Generated geo-referenced visual layers and bounding polygons for emergency monitoring teams.'
-    ],
-    architecture: 'Satellite Thermal Feed (MODIS/VIIRS Hotspots) → Spatial Noise Filter → Buffer Proximity Engine (Industrial vs Wildland) → Severity Score Classifier → Geospatial GeoJSON Map Feed',
-    githubUrl: 'https://github.com/pvsatvika/pyrosentinel-gis'
-  },
-  {
     id: 'pricedrop',
-    index: '06 / 06',
+    index: '05 / 10',
     title: 'PriceDrop',
     subtitle: 'Full-Stack E-Commerce with Scheduled Price Decay',
     event: 'Web2Cart Challenge',
@@ -135,6 +116,131 @@ const PROJECTS_DATA = [
     architecture: 'React + Vite UI with Live WebSockets/Timers → FastAPI Anti-Tamper Checkpoint → Price Decay Formula Engine → ACID Transactional SQLite Store',
     githubUrl: 'https://github.com/sruthi-r-22/PriceDrop-'
   }
+,
+  {
+  "id": "signalpost",
+  "index": "07 / 11",
+  "title": "Signalpost",
+  "subtitle": "AI-Powered Company Research & Intelligence",
+  "event": "Signalpost / Unstop",
+  "category": "ai-genai",
+  "categoryLabel": "AI & GenAI",
+  "summary": "Automated structured company research and batch workflows with validation, retries and fallback responses.",
+  "tech": [
+    "Python",
+    "Groq API",
+    "LLMs",
+    "REST APIs"
+  ],
+  "highlights": [
+    "Implemented individual and batch company research workflows.",
+    "Added retries, error handling and fallback responses.",
+    "Recorded 71 passing automated tests and validated 100 company inputs."
+  ],
+  "architecture": "Company input → Search & research → Structured LLM extraction → Validation → Results",
+  "githubUrl": ""
+},
+  {
+  "id": "dataforge",
+  "index": "08 / 11",
+  "title": "DataForge",
+  "subtitle": "AI-Assisted Autonomous Data Cleaning",
+  "event": "CodeStorm 2k26",
+  "category": "ai-genai",
+  "categoryLabel": "AI & GenAI",
+  "summary": "AI-assisted profiling and transformation planning with deterministic execution, human approval, validation and rollback.",
+  "tech": [
+    "AI/LLMs",
+    "Data Profiling",
+    "REST APIs",
+    "Vercel",
+    "Render"
+  ],
+  "highlights": [
+    "Identified missing values, duplicates, invalid types and inconsistent formatting.",
+    "Separated AI planning from deterministic data transformations.",
+    "Implemented validation, version history and rollback."
+  ],
+  "architecture": "Dataset → Profile → AI plan → Dry run → Human approval → Deterministic execution → Validation",
+  "githubUrl": ""
+},
+  {
+  "id": "repotrace",
+  "index": "09 / 11",
+  "title": "RepoTrace",
+  "subtitle": "GitHub Code Decision Intelligence",
+  "event": "HackSkill",
+  "category": "ai-genai",
+  "categoryLabel": "AI & GenAI",
+  "summary": "GraphRAG workflow connecting commits, pull requests, code files and discussions to explain code decisions with evidence.",
+  "tech": [
+    "Python",
+    "React",
+    "Neo4j",
+    "GitHub REST API",
+    "Sarvam AI",
+    "GraphRAG",
+    "Cypher"
+  ],
+  "highlights": [
+    "Connected repository artifacts in a Neo4j knowledge graph.",
+    "Built evidence-based code explanation workflows.",
+    "Used a React interface for exploring traceable decisions."
+  ],
+  "architecture": "GitHub API → Repository ingestion → Neo4j graph → Graph retrieval → Evidence-backed explanations",
+  "githubUrl": ""
+},
+  {
+  "id": "socialpulse",
+  "index": "10 / 11",
+  "title": "SocialPulse AI",
+  "subtitle": "YouTube Channel Intelligence",
+  "event": "HackWithHyderabad 3.0",
+  "category": "ai-genai",
+  "categoryLabel": "AI & GenAI",
+  "summary": "Dashboard for YouTube channel performance, audience engagement and viewer feedback with persistent analysis memory.",
+  "tech": [
+    "React",
+    "TypeScript",
+    "Python",
+    "FastAPI",
+    "Hindsight",
+    "LLMs"
+  ],
+  "highlights": [
+    "Built a dashboard for channel performance and audience feedback.",
+    "Developed FastAPI analysis workflows.",
+    "Used Hindsight-backed memory for historical context."
+  ],
+  "architecture": "Channel data → FastAPI analysis → Hindsight memory → Dashboard insights",
+  "githubUrl": ""
+},
+  {
+  "id": "aventra",
+  "index": "11 / 11",
+  "title": "Aventra",
+  "subtitle": "Event Planning & Constraint Optimization — In Development",
+  "event": "PromptWars 5 · In Development",
+  "category": "full-stack",
+  "categoryLabel": "Full-Stack",
+  "summary": "In-development constraint-aware event planner for scheduling, resources, conflicts and replanning.",
+  "tech": [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "FastAPI",
+    "Gemini",
+    "OR-Tools",
+    "SQLite"
+  ],
+  "highlights": [
+    "Designed constraint-aware scheduling and resource optimization.",
+    "Planned Gemini-assisted requirements processing.",
+    "Developing a full-stack dashboard and replanning workflows."
+  ],
+  "architecture": "Requirements → Constraint model → OR-Tools planning → Conflict review → Replanning",
+  "githubUrl": ""
+}
 ];
 
 /* ==========================================================================
@@ -264,7 +370,13 @@ function initProjectModal() {
     }
 
     if (modalGithubLink) {
-      modalGithubLink.href = data.githubUrl;
+      if (data.githubUrl) {
+        modalGithubLink.href = data.githubUrl;
+        modalGithubLink.style.display = '';
+      } else {
+        modalGithubLink.removeAttribute('href');
+        modalGithubLink.style.display = 'none';
+      }
     }
 
     backdrop.style.display = 'flex';
